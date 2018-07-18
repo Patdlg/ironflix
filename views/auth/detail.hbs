@@ -1,0 +1,53 @@
+{{#each errors}}
+<div class="alert alert-danger">{{text}}</div>
+{{else}} {{/each}}
+<div class="container">
+  <div class="column">
+<h1>{{title}}</h1>
+<img width="60%" src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="sin imagen">
+<h2>votos: {{vote_average}}</h2>
+<h3>production companies:</h3>
+<p>origin country:{{production_companies.[0].origin_country}}</p>
+
+<p>{{overview}}</p>
+
+
+<img src="https://image.tmdb.org/t/p/w500{{backdrop_path}}" alt="sin imagen">
+<div class="comments">
+      <div class="logo">
+        <img class="comment-img" width="40%" src="http://cdn.onlinewebfonts.com/svg/img_418803.png">
+
+      </div>
+  <h3>Add Comment</h3>
+<form action="/details/{{id}}" method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name="title" required>
+  </div>
+  <div class="form-group">
+    <label for="text">Text</label>
+    <textarea class="form-control" name="text" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+  </div>
+</div>
+{{#each comments}}
+<div class="card card-body mb-2">
+  <h4>{{title}}</h4>
+  <p>{{text}}</p>
+  <a class="btn btn-dark btn-block mb-2" href="/comments/edit/{{id}}">Edit</a>
+  <form method="post" action="/comments/{{id}}?_method=DELETE">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" class="btn btn-danger btn-block" value="Delete">
+  </form>
+</div>
+{{else}}
+<p>No Comment listed</p>
+
+{{/each}}
+
+
+
+

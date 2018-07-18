@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* HOME CSS ------ */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700");
 body, html {
   margin: 0;
   padding: 0;
@@ -23,21 +25,22 @@ body, html {
   /* Show content above video */ }
 
 .navbar {
-  margin-top: -5%; }
+  background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/iPqZZmF/twinkling-stars-abstract-background-monochromatic-realistic_enk7mlb8e__F0000.png);
+  background-size: cover; }
 
 .btn {
   color: white;
   background-color: #007bff; }
 
 .navbar-light .navbar-brand:hover {
-  color: red; }
+  color: white; }
 
 .form-control {
   color: white;
   background: transparent; }
 
 .navbar-light .navbar-brand {
-  color: red; }
+  color: white; }
 
 .navbar-light .navbar-nav .nav-link {
   color: white; }
@@ -91,5 +94,467 @@ body, html {
 
 .btn {
   text-shadow: none; }
+
+.row {
+  margin: auto;
+  width: 50%;
+  height: 25%;
+  padding: 10px;
+  text-align: center; }
+
+.card-body {
+  align-items: center; }
+
+* {
+  box-sizing: border-box; }
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99; }
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+a.navbar-brand {
+  text-shadow: none;
+  color: white; }
+
+a.nav-link {
+  text-shadow: none; }
+
+button.navbar-toggler.collapse {
+  background-color: white; }
+
+.navbar-toggler {
+  background-color: white; }
+
+/*signup
+#Signup{
+  background-image: url("https://dijitalkoleksiyon.files.wordpress.com/2012/09/credits-background.jpg")
+
+}
+#Signup form{
+  background-color: tan;
+  width: 30%;
+  text-align: center;
+
+}
+
+
+
+*/
+body {
+  background: url("https://i.pinimg.com/originals/d9/7f/0f/d97f0fefa8a0c627d5ea57a1e2c9ec6f.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'HelveticaNeue','Arial', sans-serif; }
+  body .darken-bg {
+    background: rgba(0, 0, 0, 0.5) !important;
+    transition: all .3s ease; }
+
+a {
+  color: #ccc;
+  text-decoration: none; }
+
+a:hover {
+  color: #34495E; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.clear-fix {
+  clear: both; }
+
+div.logo {
+  text-align: center; }
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.logo-active {
+  fill: #44aacc !important; }
+
+#formWrapper {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s ease; }
+
+form#form {
+  position: absolute;
+  width: 360px;
+  height: 320px;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -180px;
+  margin-top: -200px; }
+
+div.form-item {
+  position: relative;
+  display: block;
+  margin-bottom: 20px; }
+
+input, a {
+  transition: all .2s ease; }
+
+input.form-style {
+  color: #8a8a8a;
+  display: block;
+  width: 90%;
+  /*este valor em produção é 100%*/
+  height: 36px;
+  /*este valor em produção é 46px*/
+  padding: 5px 5%;
+  border: 2px solid #ccc;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  font-family: 'HelveticaNeue','Arial', sans-serif;
+  font-size: 105%;
+  letter-spacing: .8px; }
+
+div.form-item .form-style:focus {
+  outline: none;
+  border: 2px solid #12AA3E;
+  color: #12AA3E; }
+
+div.form-item p.formLabel {
+  position: absolute;
+  left: 26px;
+  top: -1px;
+  transition: all .4s ease;
+  color: #bbb; }
+
+.formTop {
+  top: -22px !important;
+  left: 26px;
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #12AA3E !important; }
+
+.formStatus {
+  color: #8a8a8a !important; }
+
+input[type="submit"].login,
+a.login {
+  float: right;
+  width: 100%;
+  height: 46px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #12AA3E;
+  border: none;
+  color: #fff;
+  font-size: 16px; }
+
+input[type="submit"].login:hover,
+a.login:hover {
+  background-color: rgba(18, 170, 62, 0.85);
+  color: #fff;
+  cursor: pointer; }
+
+input[type="submit"].login:focus,
+a.login:focus {
+  outline: none; }
+
+#other-login ul {
+  list-style: none;
+  padding-left: 0px; }
+  #other-login ul li {
+    width: 32%;
+    float: left;
+    margin-right: 2%; }
+    #other-login ul li .login {
+      font-size: 12px;
+      text-align: center;
+      line-height: 46px; }
+    #other-login ul li:last-child {
+      margin-right: 0; }
+
+#other-login a, #other-login input {
+  margin-bottom: 8px; }
+  #other-login a:first-child, #other-login input:first-child {
+    margin-top: 22px;
+    display: block; }
+  #other-login a:last-child, #other-login input:last-child {
+    margin-bottom: 0px; }
+
+a.login.facebook,
+input[type="submit"].login.facebook {
+  background-color: #3b5998; }
+
+a.login.google,
+input[type="submit"].login.google {
+  background-color: #d34836; }
+
+a.login.cc,
+input[type="submit"].login.cc {
+  background-color: #417EB7; }
+
+a.login.facebook:hover,
+input[type="submit"].login.facebook:hover {
+  background-color: rgba(59, 89, 152, 0.85);
+  color: #fff;
+  cursor: pointer; }
+
+a.login.google:hover,
+input[type="submit"].login.google:hover {
+  background-color: rgba(211, 72, 54, 0.85);
+  color: #fff;
+  cursor: pointer; }
+
+a.login.cc:hover,
+input[type="submit"].login.cc:hover {
+  background-color: rgba(65, 126, 183, 0.85);
+  color: #fff;
+  cursor: pointer; }
+
+.form-item .rup-pass {
+  margin-top: 5px;
+  display: block; }
+
+.footer {
+  margin-top: 16px; }
+  .footer a {
+    color: #ccc; }
+    .footer a:hover {
+      color: #34495E; }
+  .footer .help {
+    float: left; }
+  .footer .language {
+    float: right; }
+
+body {
+  position: relative;
+  height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif; }
+
+.middle-div {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.inner-middle-div {
+  display: table-cell;
+  vertical-align: middle; }
+
+.profile-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  width: 370px;
+  height: 270px;
+  margin: -150px 0 0 -200px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-image: url(https://gibraltarnewsonline.com/wp-content/uploads/2018/04/Modern-Tv-Wall-Unit-for-living-room-entertainment-wall-units-Contemporary-TV-Wall-Units-Australia-Design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  text-align: center;
+  color: #fff; }
+
+.profile-card:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 61, 64, 0.5);
+  z-index: -1;
+  border-radius: 7px; }
+
+.profile-card .card-body {
+  margin-bottom: 30px; }
+
+.profile-card .card-body .user-info .user-pic {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 100%;
+  background-image: url(https://images.pexels.com/photos/851658/pexels-photo-851658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #fff;
+  z-index: 1; }
+
+.profile-card .card-body .user-info .user-pic .edit {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #feca4a;
+  z-index: -1;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer; }
+
+.profile-card .card-body .user-info .user-pic .edit i {
+  font-size: 14px;
+  vertical-align: middle; }
+
+.profile-card .card-body .user-info .user-name {
+  margin: 15px 0 0 0;
+  font-weight: 400;
+  font-size: 1.3em; }
+
+.profile-card .card-body .user-info p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 400; }
+
+.profile-card .card-footer .list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle; }
+
+.profile-card .card-footer .list li {
+  float: left; }
+
+.profile-card .card-footer .list li + li {
+  margin-left: 60px; }
+
+.profile-card .card-footer .list li span {
+  display: block; }
+
+.profile-card .card-footer .list li span + span {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7; }
+
+.profile-card .card-footer .list li .count {
+  font-weight: 400;
+  font-size: 1.3em;
+  padding-bottom: 5px; }
+
+/* Responsive */
+@media (max-width: 767px) {
+  .profile-card {
+    width: 310px;
+    height: 250px;
+    margin: -140px 0 0 -170px; } }
+
+div.row {
+  width: 100%; }
+
+iframe {
+  margin-top: -4%;
+  float: right;
+  margin-right: 21.7%;
+  margin-left: 5%;
+  height: 55%;
+  width: 350px; }
+
+div.Hello {
+  width: 50%; }
+
+.carousel {
+  height: 300px;
+  background-color: transparent;
+  margin-top: 30px; }
+
+.carousel-item {
+  height: 100%;
+  overflow: hidden; }
+
+.carousel-item > h3 {
+  width: 50%;
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-weight: bolder; }
+
+.carousel-item > h1 {
+  width: 50%;
+  color: white;
+  margin: auto;
+  text-align: center;
+  color: #007bff; }
+
+input.form-control.mr-sm-2 {
+  background-color: transparent;
+  color: white; }
+
+div a {
+  color: white; }
+
+.column {
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 65%;
+  text-align: center;
+  background: url(https://i.pinimg.com/originals/4c/68/98/4c6898586fe5ef837e107e48d60bf01f.jpg);
+  background-size: cover;
+  border-radius: 2%; }
+
+.comments {
+  margin-top: 25px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  color: white;
+  border-radius: 7%;
+  background-color: #ced4da; }
+
+.comment-img {
+  margin-top: 50px; }
+
+.card.card-body.mb-2 {
+  width: 360px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+
+.gen-comment > h2 {
+  color: white;
+  text-align: center;
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

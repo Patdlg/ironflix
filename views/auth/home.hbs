@@ -1,40 +1,62 @@
-<body>
-  <div class="jumbotron">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">IronBlog</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ratings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Friends</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <video id="video-background" preload muted autoplay loop>
-      <source src="https://r3---sn-q4f7sn7r.googlevideo.com/videoplayback?expire=1531774554&sparams=clen,dur,ei,expire,gcr,gir,id,initcwndbps,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pcm2cms,pl,ratebypass,requiressl,source&gcr=mx&key=cms1&gir=yes&id=o-AOuAklz1QfO0kWRV6tLMT0cSdRPrqaemGR-myOsP-stY&c=WEB&pl=22&dur=0.000&lmt=1523050968765432&ip=200.36.182.54&ei=-rFMW6iAMqKR7gLEgbrIAw&source=youtube&requiressl=yes&clen=8050764&signature=4349750D6CFD2011C9B120121AAEE46815182654.6B4D2BE2473FD98851F3ECE891A8B432931A3984&fexp=23709359,23745105&ipbits=0&mime=video%2Fwebm&itag=43&fvip=3&ratebypass=yes&video_id=ebI7b7NoH54&title=Luis+Miguel+La+Serie+-+Trailer+Oficial+-+Netflix&rm=sn-uxax4vopj5hm-bqae7e,sn-hp5ry76&req_id=e8961a129a53a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=200.52.72.142&mm=29&mn=sn-q4f7sn7r&ms=rdu&mt=1531754385&mv=m"
-        type="video/webm">
-      <source src="NetflixTrailer.mp4" type="video/mp4">
-    </video>
-    <div class="container">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1>Welcome To Ironflix!</h1>
+      <h3>Enter the movie or show you are interested in the search bar!</h3>
+      <h3>Give it a try now!</h3>
     </div>
+    <div class="carousel-item">
+      <h1>Leave A Comment!</h1>
+      <h3>Make sure to write a review on movies or shows you liked, disliked, or would recommend to a friend!</h3>
+
+    </div>
+    <div class="carousel-item">
+      <h1>Don't Know What To Watch?</h1>
+      <h3>Finding a show has never been easier!</h3>
+      </div>
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container">
+  <div class="row">
+    {{#each results}}
+
+    <div id="resu" class="col">
+      <a href="/details/{{id}}">
+        <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="no salio :(" width="100px">
+        <p>{{title}}</p>
+      </a>
+    </div>
+    {{/each}}
+
+
+
   </div>
+</div>
 
 
-</body>
+
+
+   module.exports = router;
+
+
+
+
+
+
+
+
+
+

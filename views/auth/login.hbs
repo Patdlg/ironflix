@@ -1,12 +1,73 @@
-<h1>Login</h1>
 
-<form validated action="/login" method="post">
-  <p>
-    <input required placeholder="Tu correo de usuario" name="email" type="email">
-  </p>
-  <p>
-    <input required placeholder="Tu password de usuario" name="password" type="password">
-  </p>
-  <input name="next" value="{{next}}" type="hidden">
-  <input type="submit">
-</form>
+  <div id="formWrapper">
+
+    <form id="form">
+      <div class="logo">
+        <img width="50%" src="https://image.flaticon.com/icons/png/512/193/193344.png">
+        <h2><b>Log In</b></h2>
+      </div>
+      <div class="form-item">
+        <p class="formLabel">Email</p>
+        <input type="email" name="email" id="email" class="form-style" autocomplete="off" />
+      </div>
+      <div class="form-item">
+        <p class="formLabel">Password</p>
+        <input type="password" name="password" id="password" class="form-style" />
+        <p class="rup-pass">
+          <a href="#">
+            <small>Forgot Password ?</small>
+          </a>
+        </p>
+        <!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+      </div>
+      <div class="form-item">
+        <input type="submit" class="login pull-right" value="Log In">
+      </div>
+      <!--<p class="pull-left"><a href="#"><small>Register</small></a></p> -->
+      <div id="other-login">
+        <ul>
+          <li>
+            <a href="" class="login facebook pull-right">Log in Facebook</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="clear-fix"></div>
+      <div class="footer">
+        <p class="help">
+          <a href="#">
+            <small>
+              <i class="fa fa-life-ring"></i> help</small>
+          </a>
+        </p>
+        <p class="language">
+          <a href="#">
+            <small>
+              <i class="fa fa-globe"></i> language(English)</small>
+          </a>
+        </p>
+      </div>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var formInputs = $('input[type="email"],input[type="password"]');
+        formInputs.focus(function () {
+          $(this).parent().children('p.formLabel').addClass('formTop');
+          $('div#formWrapper').addClass('darken-bg');
+          $('div.logo').addClass('logo-active');
+        });
+        formInputs.focusout(function () {
+          if ($.trim($(this).val()).length == 0) {
+            $(this).parent().children('p.formLabel').removeClass('formTop');
+          }
+          $('div#formWrapper').removeClass('darken-bg');
+          $('div.logo').removeClass('logo-active');
+        });
+        $('p.formLabel').click(function () {
+          $(this).parent().children('.form-style').focus();
+        });
+      });
+      </script>
