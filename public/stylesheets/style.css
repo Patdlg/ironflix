@@ -18,6 +18,10 @@ body, html {
   background-size: cover;
   text-shadow: black 6px -2px 6px; }
 
+.overlay {
+  height: 100%;
+  /*can be anything, of course*/ }
+
 .container {
   position: relative;
   color: #ffffff;
@@ -160,9 +164,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'HelveticaNeue','Arial', sans-serif; }
-  body .darken-bg {
-    background: rgba(0, 0, 0, 0.5) !important;
-    transition: all .3s ease; }
 
 a {
   color: #ccc;
@@ -519,12 +520,14 @@ input.form-control.mr-sm-2 {
 div a {
   color: white; }
 
+.container {
+  margin-top: 50px; }
+
 .column {
   padding: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
   width: 65%;
   text-align: center;
   background: url(https://i.pinimg.com/originals/4c/68/98/4c6898586fe5ef837e107e48d60bf01f.jpg);

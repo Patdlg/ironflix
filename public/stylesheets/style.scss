@@ -19,6 +19,11 @@ body, html{
 
 }
 
+.overlay {
+    height: 100%;
+     /*can be anything, of course*/
+}
+
 
 
 .container {
@@ -30,6 +35,7 @@ body, html{
 .navbar {
   background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/iPqZZmF/twinkling-stars-abstract-background-monochromatic-realistic_enk7mlb8e__F0000.png);
   background-size: cover;
+
 }
 .btn {
   color: white;
@@ -191,7 +197,7 @@ body{
   -o-background-size: cover;
   background-size: cover;
   font-family:'HelveticaNeue','Arial', sans-serif;
-  .darken-bg{background: rgba(0,0,0,.5) !important; transition:all .3s ease;}
+
 
 }
 a{color:#ccc;text-decoration: none;}
@@ -572,17 +578,21 @@ div a {
 
 
 // Details -----------
+.container {
+  margin-top: 50px;
+}
 .column {
   padding: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  // margin-top: 30px;
   width: 65%;
   text-align: center;
   background: url(https://i.pinimg.com/originals/4c/68/98/4c6898586fe5ef837e107e48d60bf01f.jpg);
   background-size: cover;
   border-radius: 2%;
+
 }
 
 .comments {
@@ -609,8 +619,6 @@ div a {
    margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-
-
 }
 
 .gen-comment>h2 {
@@ -618,5 +626,28 @@ div a {
   text-align: center;
   margin-top: 50px;
 }
+
+.container-about {
+  margin: 0;
+  width: 100%;
+  background: url(http://www.boticabufalo.com/wp-content/uploads/2018/01/lifestyle_1600_mock.jpg);
+  height: 500px;
+  background-size: cover;
+
+}
+
+.inner {
+  margin-top: 30px;
+  margin-left: 5%;
+    width: 40%;
+  height: 60%;
+    padding: 10px;
+    color: white;
+  float: left;
+  border: solid 3px black;
+  background: url(https://i.pinimg.com/originals/4c/68/98/4c6898586fe5ef837e107e48d60bf01f.jpg);
+
+}
+
 
 
